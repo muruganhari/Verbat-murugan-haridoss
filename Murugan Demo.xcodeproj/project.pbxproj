@@ -13,6 +13,8 @@
 		E37FA43D1EC6455500F6F734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37FA43B1EC6455500F6F734 /* Main.storyboard */; };
 		E37FA43F1EC6455500F6F734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37FA43E1EC6455500F6F734 /* Assets.xcassets */; };
 		E37FA4421EC6455500F6F734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37FA4401EC6455500F6F734 /* LaunchScreen.storyboard */; };
+		E37FA4501EC64BC400F6F734 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FA44D1EC64BC400F6F734 /* DraggableView.m */; };
+		E37FA4511EC64BC400F6F734 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = E37FA44F1EC64BC400F6F734 /* DraggableViewBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E37FA43E1EC6455500F6F734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37FA4411EC6455500F6F734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37FA4431EC6455500F6F734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37FA44C1EC64BC400F6F734 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		E37FA44D1EC64BC400F6F734 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		E37FA44E1EC64BC400F6F734 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
+		E37FA44F1EC64BC400F6F734 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				E37FA4361EC6455500F6F734 /* AppDelegate.m */,
 				E37FA4381EC6455500F6F734 /* ViewController.h */,
 				E37FA4391EC6455500F6F734 /* ViewController.m */,
+				E37FA44C1EC64BC400F6F734 /* DraggableView.h */,
+				E37FA44D1EC64BC400F6F734 /* DraggableView.m */,
+				E37FA44E1EC64BC400F6F734 /* DraggableViewBackground.h */,
+				E37FA44F1EC64BC400F6F734 /* DraggableViewBackground.m */,
 				E37FA43B1EC6455500F6F734 /* Main.storyboard */,
 				E37FA43E1EC6455500F6F734 /* Assets.xcassets */,
 				E37FA4401EC6455500F6F734 /* LaunchScreen.storyboard */,
@@ -151,7 +161,9 @@
 			files = (
 				E37FA43A1EC6455500F6F734 /* ViewController.m in Sources */,
 				E37FA4371EC6455500F6F734 /* AppDelegate.m in Sources */,
+				E37FA4501EC64BC400F6F734 /* DraggableView.m in Sources */,
 				E37FA4341EC6455500F6F734 /* main.m in Sources */,
+				E37FA4511EC64BC400F6F734 /* DraggableViewBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Murugan Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.test.Murugan-Demo";
@@ -276,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Murugan Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.test.Murugan-Demo";

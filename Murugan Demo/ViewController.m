@@ -7,21 +7,37 @@
 //
 
 #import "ViewController.h"
+#import "DraggableViewBackground.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+DraggableViewBackground *draggableBackground;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _lblNoRecords.text=@"No records found please reload it !!!...";
+     [self reload];
 }
-
+-(void)reload
+{
+    draggableBackground = [[DraggableViewBackground alloc]initWithFrame:_childView.frame];
+    [_childView addSubview:draggableBackground];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnRight:(id)sender {
+    [draggableBackground swipeRight];
+}
+
+- (IBAction)btnReload:(id)sender {
+    [self reload];
+}
+
+- (IBAction)btnLeft:(id)sender {
+    [draggableBackground swipeLeft];
+}
 @end
